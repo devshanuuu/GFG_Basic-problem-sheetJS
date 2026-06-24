@@ -1,3 +1,6 @@
+//-----Frontend-----//
+
+
 async function getUsers() {
     
     try {
@@ -13,3 +16,11 @@ async function getUsers() {
 }
 
 getUsers();
+
+
+//-----Backend----//
+
+
+app.get("/api/users", (req, res) => {
+  res.json({ message: "Hello from backend" });
+});
